@@ -1,0 +1,28 @@
+# 환경 변수 파일
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 파이썬 캐시 파일
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 가상 환경
+.venv/
+venv/
+ENV/
+
+# IDE 설정
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 로그 파일
+*.log
+
+# 기타
+.DS_Store 
