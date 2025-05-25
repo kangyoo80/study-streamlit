@@ -1,9 +1,26 @@
-streamlit==1.36.0
-python-dotenv==1.1.0
-langchain==0.3.25
+# streamlit==1.36.0
+# python-dotenv==1.1.0
+# langchain==0.3.25
+# langchain-core==0.3.60
+# langchain-community==0.3.24
+# langchain-openai==0.0.5
+# langchain-pinecone==0.0.1
+# openai==1.11.0
+# pinecone-client==3.0.0 
+
+
+# ─── 필수 ─────────────────────────────────────
+streamlit==1.45.1          # 최신 안정판 (1.36.0 대신)
+python-dotenv==1.0.1       # load_dotenv 해결
+
+# ─── LangChain 패밀리(버전 호환 세트) ───────────
 langchain-core==0.3.60
+langchain==0.3.25
 langchain-community==0.3.24
-langchain-openai==0.0.5
-langchain-pinecone==0.0.1
+langchain-openai==0.1.6     # 0.1.x 이상이면 langchain-core 0.3.x와 호환
+
+# ─── Vector DB ────────────────────────────────
+pinecone-client==3.2.2      # 3.2.x는 Py≥3.8 공식 릴리스
+
+# ─── 기타 ─────────────────────────────────────
 openai==1.11.0
-pinecone-client==3.0.0 
